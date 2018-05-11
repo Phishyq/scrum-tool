@@ -11,7 +11,8 @@ Encore
     // .enableVersioning(Encore.isProduction())
 
     // uncomment to define the assets of the project
-    .addEntry('login', './assets/js/login.js')
+    .addEntry('login', './assets/css/login.css')
+    .addEntry('main', './assets/css/main.css');
     // .addStyleEntry('css/app', './assets/css/app.scss')
 
     // uncomment if you use Sass/SCSS files

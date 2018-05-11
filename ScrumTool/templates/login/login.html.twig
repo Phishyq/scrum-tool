@@ -1,15 +1,18 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}Scrum Tool{% endblock %}
-
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('build/login.css') }}">
+{% endblock %}
 {% block body %}
     <div class="login-position">
         <form action="">
-            <div class="credentials">
+            <div class="credentials form-group">
                 <input type="text" name="username" placeholder="Username">
                 <input type="text" name="email" placeholder="my@email.com">
             </div>
-            <div class="enter-scrum">
+            <div class="enter-scrum form-group">
                 <input type="submit" value="Join Scrum" name="join">
                 <input type="submit" value="Create Room" name="create">
             </div>
