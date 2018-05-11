@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Scrum Tool{% endblock %}
+
+{% block body %}
+    <div class="login-position">
+        <form action="">
+            <div class="credentials">
+                <input type="text" name="username" placeholder="Username">
+                <input type="text" name="email" placeholder="my@email.com">
+            </div>
+            <div class="enter-scrum">
+                <input type="submit" value="Join Scrum" name="join">
+                <input type="submit" value="Create Room" name="create">
+            </div>
+        </form>
+    </div>
+{% endblock %}
